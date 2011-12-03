@@ -1,0 +1,29 @@
+/*
+ * =====================================================================================
+ *
+ *       Filename:  default.css
+ *
+ *    Description:  
+ *
+ *        Version:  1.0
+ *        Created:  2011/12/02 19时02分50秒
+ *       Revision:  none
+ *       Compiler:  gcc
+ *
+ *         Author:  YOUR NAME (), 
+ *        Company:  
+ *
+ * =====================================================================================
+ */
+
+/** 
+ * display#menu
+ */
+.bg_color {
+    font-style: italic;
+    background-color: #bed;
+}
+.middle {
+    text-align: center;
+    color: #000;
+}
