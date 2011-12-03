@@ -40,8 +40,30 @@
 |
 */
 $config['base_url']	= 'http://127.0.0.1:8888';
+
+
+
+
+
+/**
+ * javascript location
+ *
+ * template's images
+ *
+ */
 $config['javascript_location'] = 'http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js';
 $config['javascript_ajax_img'] = 'images/ajax-loader.gif';
+$config['template_images'] = 'http://127.0.0.1:8888/templates/images';
+
+/**
+ * Flick's photo api
+ *
+ * key
+ *
+ * secret
+ */
+$config['flick_key'] = '3a94bcea7623cfbf74e9ca2f4fe426de';
+$config['flick_secret'] = '327ef4341b14729c';
 
 /*
 |--------------------------------------------------------------------------

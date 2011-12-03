@@ -44,7 +44,7 @@
                     display = (function() {p.innerHTML = 'Today is '+ y + 'year ' + m + 'month ' + d + 'day ' + w + 'week ' + 'Now is ' + tt;})();
                 };
                 setInterval("cala()", 1000);
-               </script>
+                </script>
                 </p>
                 </div>
                 <div id="right">
@@ -66,6 +66,7 @@ $('div#right').addClass('middle');
 $(':button').bind('click', function(){
     var url = [
         "https://github.com",
+        "https://mail.google.com",
         "http://api.jquery.com/button-selector/",
         "http://www.w3schools.com/jsref/obj_location.asp"
     ];
