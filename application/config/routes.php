@@ -70,6 +70,8 @@ $route['404_override'] = '';
 $route['homepage/:any'] = "homepage/display";
 $route['homepage'] = "homepage/display";
 
+$route['confirm'] = "confirm/flob";
+
 
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

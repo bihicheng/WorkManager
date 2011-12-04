@@ -427,7 +427,6 @@ class Phlickr_Api {
         $this->_token = (string) $xml->token;
         $this->_userId = (string) $xml->user['nsid'];
 
-        //echo $this->_token;exit;
         // return the token incase they're interested
         return $this->_token;
     }
@@ -543,6 +542,11 @@ class Phlickr_Api {
         }
         return 'http://flickr.com/services/auth/?'.
             Phlickr_Request::signParams($this->getSecret(), $params);
+    }
+
+    function requestToken($url)
+    {
+        return Phlickr_Request::submitHttpPost($url);
     }
 
     /**

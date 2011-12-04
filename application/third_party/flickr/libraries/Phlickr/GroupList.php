@@ -11,15 +11,15 @@
 /**
  * Phlickr_Api includes the core classes.
  */
-require_once 'Phlickr/Api.php';
+require_once 'Api.php';
 /**
  * This class extends Phlickr_ListBase.
  */
-require_once 'Phlickr/Framework/ListBase.php';
+require_once 'Framework/ListBase.php';
 /**
  * One or more methods returns Phlickr_Group objects.
  */
-require_once 'Phlickr/Group.php';
+require_once 'Group.php';
 
 /**
  * Phlickr_GroupList

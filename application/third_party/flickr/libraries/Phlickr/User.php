@@ -11,27 +11,27 @@
 /**
  * Phlickr_Api includes the core classes.
  */
-require_once 'Phlickr/Api.php';
+require_once 'Api.php';
 /**
  * This class extends Phlickr_ObjectBase.
  */
-require_once 'Phlickr/Framework/ObjectBase.php';
+require_once 'Framework/ObjectBase.php';
 /**
  * One or more methods returns Phlickr_GroupList objects.
  */
-require_once 'Phlickr/GroupList.php';
+require_once 'GroupList.php';
 /**
  * One or more methods returns Phlickr_PhotoList objects.
  */
-require_once 'Phlickr/PhotoList.php';
+require_once 'PhotoList.php';
 /**
  * One or more methods returns Phlickr_PhotosetList objects.
  */
-require_once 'Phlickr/PhotosetList.php';
+require_once 'PhotosetList.php';
 /**
  * One or more methods returns Phlickr_UserList objects.
  */
-require_once 'Phlickr/UserList.php';
+require_once 'UserList.php';
 
 
 /**

@@ -11,7 +11,7 @@
 /**
  * This class extends Group_Photo.
  */
-require_once 'Phlickr/Group.php';
+require_once 'Group.php';
 
 /**
  * Phlickr_AuthedGroup allows a user to photos to groups they are a member of.

@@ -19,18 +19,21 @@ class Homepage extends CI_Controller{
     public function display()
     {
         //Flick Photos
-        $flickr_key = $this->config->item('flick_key');
-        $flickr_secret = $this->config->item('flick_secret');
+        $flickr_key = $this->config->item('flickr_key');
+        $flickr_secret = $this->config->item('flickr_secret');
 
-        $this->load->library('flickr', array($flickr_key, $flickr_secret));
+        $frob = $this->input->get('frob');
 
-        $frob = $this->flickr->requestFrob();
 
-        //$token_url = $this->flickr->buildAuthUrl('read', $frob);
-        $token = $this->flickr->setAuthTokenFromFrob($frob);
+        if (isset($frob) && !empty($frob)) {
+            $this->load->library('flickr', array($flickr_key, $flickr_secret));
+            $token = $this->flickr->setAuthTokenFromFrob($frob);
 
-        $params = array('min_date' => '20111201','format'=>'rest','auto_token' => isset($token)? $token : '');
-        $req = $this->flickr->executeMethod('flickr.photos.recentlyUpdated', $params);
-        $this->load->view('homepage');
+            $params = array('min_date' => '20111201','format'=>'rest','auto_token' => isset($token)? $token : '');
+            $req = $this->flickr->executeMethod('flickr.photos.recentlyUpdated', $params);
+            //var_dump($req->getXml()->photos->photo);
+            $data = array($req);
+        }
+        $this->load->view('homepage', isset($data)? $data : array());
     }
 }

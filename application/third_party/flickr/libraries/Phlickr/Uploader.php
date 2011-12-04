@@ -11,23 +11,23 @@
 /**
  * Phlickr_Api includes the core classes.
  */
-require_once 'Phlickr/Api.php';
+require_once 'Api.php';
 /**
  * One or more methods returns Phlickr_Photo objects.
  */
-require_once 'Phlickr/AuthedPhoto.php';
+require_once 'AuthedPhoto.php';
 /**
  * uploadBatch() uses this to create a photoset.
  */
-require_once 'Phlickr/AuthedPhotosetList.php';
+require_once 'AuthedPhotosetList.php';
 /**
  * uploadBatch() accepts Phlickr_Framework_IUploadBatch as a parameter.
  */
-require_once 'Phlickr/Framework/IUploadBatch.php';
+require_once 'Framework/IUploadBatch.php';
 /**
  * uploadBatch() accepts Phlickr_Framework_IUploadListener as a parameter.
  */
-require_once 'Phlickr/Framework/IUploadListener.php';
+require_once 'Framework/IUploadListener.php';
 
 /**
  * Uploads photos to Flickr.

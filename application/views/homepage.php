@@ -68,6 +68,7 @@ $(':button').bind('click', function(){
         "https://github.com",
         "https://mail.google.com",
         "http://api.jquery.com/button-selector/",
+        "http://www.flickr.com/services/api/auth.howto.web.html",
         "http://www.w3schools.com/jsref/obj_location.asp"
     ];
     open_sites(url);
