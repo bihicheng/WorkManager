@@ -27,3 +27,6 @@
     text-align: center;
     color: #000;
 }
+.automiddle {
+    margin: 0 auto;
+}

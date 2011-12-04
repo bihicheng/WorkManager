@@ -47,9 +47,17 @@
                 </script>
                 </p>
                 </div>
+
                 <div id="right">
                     <input type="button" class="button" value="StartWebDev" name="StartWork" />
                 </div>
+
+                <div id="bottom">
+                    <img src="<?php echo base_url(); ?>templates/images/FuckYanKees.jpg" alt="fuck" id=0 />
+                    <img src="<?php echo base_url(); ?>templates/images/FuckYanKees.jpg" alt="fuck" id=1 />
+                    <img src="<?php echo base_url(); ?>templates/images/FuckYanKees.jpg" alt="fuck" id=2 />
+                </div>
+
                 <div id="left">
                 </div>
         </div>
@@ -63,6 +71,14 @@
 $('body').addClass('bg_color');
 $('p#d').addClass('middle');
 $('div#right').addClass('middle');
+$('div#bottom').addClass('middle').bind('click',  function(event){
+    //alert(event.target.nodeName);
+    var imgs = $('div#bottom img'),
+        i = 0,
+        w = parseInt(event.target.id);
+    $(imgs[w]).hide();
+});
+
 $(':button').bind('click', function(){
     var url = [
         "https://github.com",

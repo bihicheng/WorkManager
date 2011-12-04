@@ -21,4 +21,5 @@
  * 开始一个效果
  * 执行一个事件
  */
-
+$().add('selector/elements/html')
+ready	$(this).addClass('.fadeOut('slow/400/fast')')
